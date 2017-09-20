@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Quick Tags Demo</title>
+        <style>
+            body{
+                background-color: #eee;
+            }
+            .btn{
+                border:1px solid #ccc ;
+                width: 150px;
+                height: 36px;
+                background: #fff;
+                margin-bottom: 6px;
+                text-align: center;
+                line-height: 36px;
+                font-family: "Segoe UI";
+            }
+        </style>
+        <script type="text/javascript" src="./jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="./quicktags.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(document.body).tags({
+                     'div.btn':{
+                         $:{
+                             text:'Button A',
+                             attr:{
+                                 data:'demo attr'
+                             },
+                             event:{
+                                 click:function(){
+                                     alert('Clicked : Button A');
+                                 },
+                                 mousedown:function(){
+                                     alert('Mousedown : Button A');
+                                 }
+                             }
+                         }
+                     },'.btn':{
+                        $:{
+                            text:'Button B',
+                            event:{
+                                mousedown:function(){
+                                    alert('Mousedown : Button B');
+                                }
+                            }
+                        }
+                     }
+                });
+            });
+        </script>
+    </head>
+    <body></body>
+</html>
