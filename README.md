@@ -33,6 +33,6 @@ Javascript Frontend framework for DOM Elements, Events and etc.
                 });
 ```
 ### Output
-<img src="https://raw.githubusercontent.com/KishanV/QuickTags/master/imgs/Example.png" width="70%" />
+<img src="https://raw.githubusercontent.com/KishanV/QuickTags/master/imgs/Example.png"/>
 
 
